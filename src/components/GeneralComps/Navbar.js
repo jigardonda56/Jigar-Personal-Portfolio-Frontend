@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className="container-fluid">
 
                 <div className='navbar-title'>
-                    <Link className="navbar-brand navbar-title-link" to="/">Jigar Donda</Link>
+                    <Link className="navbar-brand navbar-title-link" to="/">Jigar Dondaaaaaa</Link>
                 </div>
              
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-ul">
