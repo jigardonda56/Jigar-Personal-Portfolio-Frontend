@@ -3,7 +3,7 @@ import myContext from "./myContext";
 
 const NoteState = (props) => {
 
-    const host = "https://jigar-donda.onrender.com";
+    const host = "https://jigar-donda-backend.onrender.com";
 
     const Initial = [{}];
 
