@@ -26,13 +26,13 @@ const Navbar = () => {
              
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 navbar-ul">
                         {/* nav items */}
-                        {/* <li className="nav-item">
+                        <li className="nav-item">
                             <Link className={`nav-link ${location.pathname === "/profile" ? "active" : ""}`} to="/profile">Profile</Link>
                         </li>
 
                         <li className="nav-item">
                             <Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link>
-                        </li> */}
+                        </li>
 
                         {localStorage.getItem('token') ? <li className="nav-item">
                             <Link className={`nav-link ${location.pathname === "/admin" ? "active" : ""}`} to="/admin">Edit Profile</Link>
