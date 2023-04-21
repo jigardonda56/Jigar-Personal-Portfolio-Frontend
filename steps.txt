@@ -1,0 +1,21 @@
+npx create-react-app mr-react-app = in frontend
+
+npm init = in backend
+
+npm i express = in bakcend
+
+npm i mongoose = backend
+
+npm install cors = backend
+
+npm install --save express-validator = backend
+
+npm i bcryptjs = backend
+
+npm install jsonwebtoken --save = backend
+
+npm install react-router-dom --save = frontend
+
+npm install -g concurrently = frontend
+
+npm install body-parser = backend to increas image upload maximum sixe

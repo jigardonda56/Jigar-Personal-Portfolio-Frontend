@@ -1,0 +1,71 @@
+.hero-main-div {
+    border: none;
+    height: auto;
+    width: 80%;
+    margin: 5rem auto 5rem auto;
+}
+
+.hero-divs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-image-div {
+    width: 50%;
+    text-align: center;
+    background-color: rgb(235, 238, 255);
+    border-radius: 50%;
+}
+
+.hero-line-div {
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 1.5rem;
+}
+
+.hero-image-div img {
+    width: 30rem;
+    z-index: 1;
+}
+
+.hero-lines-small {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.hero-lines-large {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    .hero-main-div {
+        width: 90%;
+        margin-top: 2rem;
+    }
+
+    .hero-image-div,
+    .hero-line-div {
+        flex: 100%;
+        text-align: center;
+    }
+
+    .hero-image-div img {
+        width: 17rem;
+    }
+
+    .hero-line-div {
+        padding: 1rem;
+    }
+
+    .hero-lines-small {
+        font-size: 1.8rem;
+    }
+
+    .hero-lines-large {
+        font-size: 2.5rem;
+    }
+}

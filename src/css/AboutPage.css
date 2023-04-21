@@ -1,0 +1,12 @@
+.about-page-div {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-page-div div {
+    width: 50%;
+    text-align: center;
+    border-radius: 50%;
+}

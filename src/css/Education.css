@@ -1,0 +1,104 @@
+.education-background-div {
+    background-color: rgb(235, 238, 255);
+    padding: 2rem;
+    border-radius: 50%;
+    margin: 1rem 0 15rem 0;
+}
+
+.education-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+
+}
+
+
+.education-div2 div {
+    padding: 0.5rem;
+}
+
+.education-main-div {
+    border-radius: 30px;
+    border: none !important;
+    font-size: 1.3rem;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: inset 0 -3em 3em rgba(255, 255, 255, 0.1), 0 0 0 2px rgb(255, 255, 255),
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    transition: all 0.8s ease;
+    transform: translate3d(0px, 0px, 0px) scale3d(0.96, 0.96, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    opacity: 0;
+    transform-style: preserve-3d;
+}
+
+.visible {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    opacity: 1;
+}
+
+
+.education-image-div {
+    width: 10%;
+}
+
+.education-text-div {
+    width: 90%;
+}
+
+.education-desc {
+    /* see more - see less button css */
+    display: block;
+    /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+
+.read-more-less {
+    float: right;
+    text-decoration: none;
+    color: rgb(81, 89, 96);
+    padding-right: 3rem;
+}
+
+.expended {
+    max-height: none;
+}
+
+.btn-hide {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .education-h2 {
+        background-color: rgb(235, 238, 255);
+        padding: 2rem;
+        padding-top: 5rem;
+        margin: 1rem 0 0 0;
+        font-size: 2rem;
+    }
+
+    .education-background-div {
+        padding: 1rem 0 1rem 0;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .education-main-div {
+        width: 95%;
+        border: 10px solid rgb(235, 238, 255);
+        border-radius: 5px;
+    }
+
+    .education-div2 {
+        padding: 1rem;
+    }
+
+    .education-image-div {
+        width: 20%;
+    }
+
+    .education-text-div {
+        width: 80%;
+        padding: 1rem 0 1rem 0;
+    }
+}

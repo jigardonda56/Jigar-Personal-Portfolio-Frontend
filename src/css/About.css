@@ -1,0 +1,57 @@
+h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.about-div {
+    width: 80%;
+    margin: 15rem auto 15rem auto;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    transition: transform .4s;
+}
+
+.about-text {
+    padding: 3rem;
+    color: rgb(81, 89, 96);
+
+    /* see more - see less button css */
+    display: block;
+    /* or inline-block */
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    max-height: 10rem;
+}
+
+.read-more-less{
+    float: right;
+    text-decoration: none;
+    color: rgb(81, 89, 96);
+    padding-right: 3rem;
+}
+
+.expended {
+    max-height: none;
+}
+
+.btn-hide{
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .about-h2{
+        font-size: 2rem;
+    }
+    .about-div {
+        width: 90%;
+    }
+
+    .about-text {
+        padding: 5px;
+        max-height: 14rem;
+    }
+
+}

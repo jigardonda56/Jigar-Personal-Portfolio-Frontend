@@ -1,0 +1,91 @@
+.navbar {
+    font-family: Satoshi, sans-serif;
+    width: 80%;
+    margin: 1.5rem auto 1.5rem auto;
+    background-color: white !important;
+}
+
+.navbar-ul {
+    margin-left: auto;
+    font-size: 1.3rem;
+    padding-right: 20rem;
+}
+
+.navbar-ul li {
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.navbar-title {
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar-title-link{
+    font-size: 2rem;
+}
+
+.navbar-title:hover {
+    transform: translateY(-0.25em);
+}
+
+.email-div{
+    transition: all 0.2s ease-in-out;
+}
+
+.email-div img{
+    height: 1.8rem;
+    margin-bottom: 0.3rem;
+}
+
+a[href^="mailto"]{
+    text-decoration: none;
+    font-family: Satoshi, sans-serif;
+    width: 80%;
+    margin: 1.5rem auto 1.5rem auto;
+    background-color: white !important;
+    color: #6c757d;
+    font-size: 1.4rem;
+}
+
+
+.email-div:hover{
+    transform: translateY(-0.25em);
+}
+.nav-btn{
+    border-radius: 20%;
+    transition: all 0.2s ease-in-out;
+}
+
+.collapsed{
+    background-color: rgb(217, 217, 217);
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .navbar-div{
+        margin-top: 2rem;
+    }
+    
+    .navbar-title{
+        margin-right: 0;
+    }
+
+    .navbar-ul{
+        padding: 0;
+        text-align: center;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .email-span{
+        display: none;
+    }
+
+    .email-div img{
+        height: 2.5rem;
+    }
+  }
