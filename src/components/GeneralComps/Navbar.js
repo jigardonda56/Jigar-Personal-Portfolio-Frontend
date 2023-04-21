@@ -31,7 +31,7 @@ const Navbar = () => {
                         </li>
 
                         <li className="nav-item">
-                            <Link className={`nav-link ${location.pathname === "/admin" ? "active" : ""}`} to="/profile">Admin</Link>
+                            <Link className={`nav-link ${location.pathname === "/admin" ? "active" : ""}`} to="/admin">Admin</Link>
                         </li>
 
                         <li className="nav-item">
