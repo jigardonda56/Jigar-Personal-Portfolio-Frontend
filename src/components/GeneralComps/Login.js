@@ -10,7 +10,7 @@ const Login = (props) => {
         e.preventDefault();
         console.log("login clicked");
 
-        const response = await fetch("https://jigar-donda.onrender/api/auth/login", {
+        const response = await fetch("https://jigar-donda-backend.onrender/api/auth/login", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
