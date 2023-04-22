@@ -15,7 +15,7 @@ const EducationComp = () => {
     const [visibleClass, setvisibleClass] = useState("");
     let breakCondition = false;
     window.addEventListener('scroll', function () {
-        var element = document.querySelector('.card-text');
+        var element = document.querySelector('.education-top-div');
         var position = element.getBoundingClientRect();
         // checking for partial visibility
         if (position.top >= 0 && position.bottom <= window.innerHeight && !breakCondition) {
