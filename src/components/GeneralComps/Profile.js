@@ -17,9 +17,10 @@ const Profile = () => {
   const context = useContext(myContext);
   const { GetRequestSuccess } = context;
 
+  console.log("getRequestSuccess==" , GetRequestSuccess);
   return (
 <>
-    { GetRequestSuccess ? (<><HeroImageComp /><AboutComp /><EducationComp /><CertificationComp /><VolunteerComp /><SkillsComp /><CoursesComp /><ProjectsComp /><AwardsComp /></>) : (<ReactBootStrap.Spinner animation="border" />)}
+    { GetRequestSuccess === true ? (<><HeroImageComp /><AboutComp /><EducationComp /><CertificationComp /><VolunteerComp /><SkillsComp /><CoursesComp /><ProjectsComp /><AwardsComp /></>) : (<ReactBootStrap.Spinner animation="border" />)}
 </>
   )
 }
