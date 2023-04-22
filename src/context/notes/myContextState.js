@@ -17,6 +17,8 @@ const NoteState = (props) => {
     const [project, setProject] = useState(Initial);
     const [award, setAward] = useState(Initial);
 
+    const [GetRequestSuccess, setGetRequestSuccess] = useState(false);
+
     //Get Hero Details
     const getHero = async () => {
 
@@ -26,6 +28,7 @@ const NoteState = (props) => {
                 "Content-Type": "application/json"
             }
         });
+        setGetRequestSuccess(true)
         const aboutjson = await response.json();
 
         setHeroImage(aboutjson);
@@ -705,7 +708,7 @@ const NoteState = (props) => {
 
 
     return (
-        <myContext.Provider value={{ heroimage, getHero, addHero, editHero, about, getAbout, editAbout, education, getEducation, addEducation, deleteEducation, editEducation, certification, addCertification, deleteCertification, editCertification, getCertification, volunteer, addVolunteer, deleteVolunteer, editVolunteer, getVolunteer, skills, addSkills, deleteSkills, editSkills, getSkills, course, addCourse, deleteCourse, editCourse, getCourse, project, getProject, addProject, deleteProject, editProject, award, getAward, addAward, deleteAward, editAward }}>
+        <myContext.Provider value={{ heroimage, getHero, addHero, editHero, about, getAbout, editAbout, education, getEducation, addEducation, deleteEducation, editEducation, certification, addCertification, deleteCertification, editCertification, getCertification, volunteer, addVolunteer, deleteVolunteer, editVolunteer, getVolunteer, skills, addSkills, deleteSkills, editSkills, getSkills, course, addCourse, deleteCourse, editCourse, getCourse, project, getProject, addProject, deleteProject, editProject, award, getAward, addAward, deleteAward, editAward, GetRequestSuccess }}>
             {props.children}
         </myContext.Provider>
     )

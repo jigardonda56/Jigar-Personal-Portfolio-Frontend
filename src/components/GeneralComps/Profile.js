@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AboutComp from '../DisplayProfileComps/AboutComp'
 import CertificationComp from '../DisplayProfileComps/CertificationComp'
 import VolunteerComp from '../DisplayProfileComps/VolunteerComp'
@@ -9,19 +9,17 @@ import AwardsComp from '../DisplayProfileComps/AwardsComp'
 import EducationComp from '../DisplayProfileComps/EducationComp'
 import HeroImageComp from '../DisplayProfileComps/HeroImageComp'
 
+import * as ReactBootStrap from 'react-bootstrap';
+import myContext from '../../context/notes/myContext'
+
 const Profile = () => {
+
+  const context = useContext(myContext);
+  const { GetRequestSuccess } = context;
+
   return (
     <>
-
-      <HeroImageComp />
-      <AboutComp />
-      <EducationComp />
-      <CertificationComp />
-      <VolunteerComp />
-      <SkillsComp />
-      <CoursesComp />
-      <ProjectsComp />
-      <AwardsComp />
+      {GetRequestSuccess ? <><HeroImageComp /><><AboutComp /><EducationComp /><CertificationComp /><VolunteerComp /><SkillsComp /><CoursesComp /><ProjectsComp /><AwardsComp /></></> : <ReactBootStrap.Spinner animation="border" />}
     </>
   )
 }
