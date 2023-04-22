@@ -4,27 +4,30 @@ import '../../css/Hero.css'
 
 const HeroImageComp = () => {
     const context = useContext(myContext);
-    const { heroimage, getHero } = context;
+    const { heroimage, getHero, GetRequestSuccess } = context;
 
     useEffect(() => {
         getHero();
     }, [])
     return (
         <>
-            <div className="hero-main-div">
+            {GetRequestSuccess === true ? (<>
+                <div className="hero-main-div">
 
-                <div className="hero-divs">
-                    <div className="hero-image-div">
-                        <img src={heroimage[0].image} className="img-fluid rounded-start" alt="..." />
+                    <div className="hero-divs">
+                        <div className="hero-image-div">
+                            <img src={heroimage[0].image} className="img-fluid rounded-start" alt="..." />
+                        </div>
+
+                        <div className="hero-line-div">
+                            <p className="hero-lines-small"><small className="text-muted">{heroimage[0].line1}</small></p>
+                            <p className="hero-lines-large">{heroimage[0].line2}</p>
+                        </div>
                     </div>
 
-                    <div className="hero-line-div">
-                        <p className="hero-lines-small"><small className="text-muted">{heroimage[0].line1}</small></p>
-                        <p className="hero-lines-large">{heroimage[0].line2}</p>
-                    </div>
                 </div>
+            </>) : (<></>)}
 
-            </div>
         </>
     )
 }
