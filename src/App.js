@@ -23,7 +23,7 @@ function App() {
             <Routes>
               <Route exact path="/" element={<Profile />} />
               <Route exact path="/profile" element={<Profile />} />
-              <Route exact path="/about" element={<About />} />
+              <Route path="/about" element={<About />} />
               <Route exact path="/admin" element={<EditProfileComp />} />
               <Route exact path="/login" element={<Login />} />
             </Routes>
