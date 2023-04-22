@@ -11,6 +11,7 @@ import HeroImageComp from '../DisplayProfileComps/HeroImageComp'
 
 import * as ReactBootStrap from 'react-bootstrap';
 import myContext from '../../context/notes/myContext'
+import '../../css/Profile.css'
 
 const Profile = () => {
 
@@ -21,7 +22,7 @@ const Profile = () => {
   return (
     <>
       <HeroImageComp />
-      {GetRequestSuccess === true ? (<><AboutComp /><EducationComp /><CertificationComp /><VolunteerComp /><SkillsComp /><CoursesComp /><ProjectsComp /><AwardsComp /></>) : (<ReactBootStrap.Spinner animation="border" />)}
+      {GetRequestSuccess === true ? (<><AboutComp /><EducationComp /><CertificationComp /><VolunteerComp /><SkillsComp /><CoursesComp /><ProjectsComp /><AwardsComp /></>) : (<ReactBootStrap.Spinner className='spinner' animation="border" />)}
     </>
   )
 }
