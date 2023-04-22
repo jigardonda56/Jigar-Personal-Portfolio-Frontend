@@ -18,9 +18,9 @@ const Profile = () => {
   const { GetRequestSuccess } = context;
 
   return (
-    <>
-      {GetRequestSuccess ? <><HeroImageComp /><><AboutComp /><EducationComp /><CertificationComp /><VolunteerComp /><SkillsComp /><CoursesComp /><ProjectsComp /><AwardsComp /></></> : <ReactBootStrap.Spinner animation="border" />}
-    </>
+<>
+    { GetRequestSuccess ? (<><HeroImageComp /><AboutComp /><EducationComp /><CertificationComp /><VolunteerComp /><SkillsComp /><CoursesComp /><ProjectsComp /><AwardsComp /></>) : (<ReactBootStrap.Spinner animation="border" />)}
+</>
   )
 }
 
