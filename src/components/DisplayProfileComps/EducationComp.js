@@ -15,7 +15,7 @@ const EducationComp = () => {
     const [visibleClass, setvisibleClass] = useState("");
     let breakCondition = false;
     window.addEventListener('scroll', function () {
-        var element = document.querySelector('.education-main-div');
+        var element = document.querySelector('.card-text');
         var position = element.getBoundingClientRect();
         // checking for partial visibility
         if (position.top >= 0 && position.bottom <= window.innerHeight && !breakCondition) {
@@ -30,12 +30,12 @@ const EducationComp = () => {
 
     return (
         <>
-            <div className="education-main-div">
+            <div className={"education-top-div " + visibleClass}>
                 <h2 className='education-h2'>Education</h2>
                 <div className='education-background-div'>
                     {
                         education.map((data, index) => {
-                            return <div key={index} className={"card mb-3 education-main-div " + visibleClass}>
+                            return <div key={index} className="card mb-3 education-main-div ">
                                 <div className="education-div2">
                                     <div className="education-image-div">
                                         <img src={data.image || blank_profile_pic} className="img-fluid rounded-start" alt="..." />

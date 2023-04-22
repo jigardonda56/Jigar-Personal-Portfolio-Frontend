@@ -1,3 +1,12 @@
+.education-top-div{
+    opacity: 0;
+}
+
+.visible {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    opacity: 1;
+}
+
 .education-background-div {
     background-color: rgb(235, 238, 255);
     padding: 2rem;
@@ -31,10 +40,7 @@
     transform-style: preserve-3d;
 }
 
-.visible {
-    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-    opacity: 1;
-}
+
 
 
 .education-image-div {
