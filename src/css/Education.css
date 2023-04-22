@@ -36,7 +36,6 @@
         0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     transition: all 0.8s ease;
     transform: translate3d(0px, 0px, 0px) scale3d(0.96, 0.96, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-    opacity: 0;
     transform-style: preserve-3d;
 }
 
