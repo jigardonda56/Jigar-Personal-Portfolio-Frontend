@@ -106,7 +106,7 @@ const AddEditDelProjectComp = () => {
             </button>
 
             <div className="modal fade" id="addproject" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog" style={{ maxWidth: 'none', width: '70rem' }}>
+                <div className="modal-dialog" style={{ maxWidth: 'none' }}>
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="exampleModalLabel">Add Project</h5>
@@ -172,7 +172,7 @@ const AddEditDelProjectComp = () => {
             </button>
 
             <div className="modal fade" id="editproject" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog" style={{ maxWidth: 'none', width: '70rem' }}>
+                <div className="modal-dialog" style={{ maxWidth: 'none' }}>
                     <div className="modal-content">
                         <div className="modal-header">
                             <h5 className="modal-title" id="exampleModalLabel">Edit Project</h5>
