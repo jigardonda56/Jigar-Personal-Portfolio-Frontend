@@ -34,9 +34,9 @@ const Navbar = () => {
                             <Link className={`nav-link ${location.pathname === "/admin" ? "active" : ""}`} to="/admin">Admin</Link>
                         </li>*/}
 
-                    <li className="nav-item">
-                        <Link className='nav-link' to={{ pathname: "https://www.linkedin.com/in/jigar-donda-71587b220/" }} target="_blank">LinkedIn</Link>
-                    </li>
+                    <Link href="https://www.linkedin.com/in/jigar-donda-71587b220/" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </Link>
 
                     {localStorage.getItem('token') ? <li className="nav-item">
                         <Link className={`nav-link ${location.pathname === "/admin" ? "active" : ""}`} to="/admin">Edit Profile</Link>
