@@ -14,7 +14,7 @@ const ProjectsComp = () => {
     const [visibleClass, setvisibleClass] = useState("");
     let breakCondition = false;
     window.addEventListener('scroll', function () {
-        var element = document.querySelector('.project-text-div');
+        var element = document.querySelector('.project-image-div');
         var position = element.getBoundingClientRect();
         // checking for partial visibility
         if (position.top >= 0 && position.bottom <= window.innerHeight && !breakCondition) {
