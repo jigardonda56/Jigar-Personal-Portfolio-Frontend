@@ -54,11 +54,11 @@ const AddEditDelHeroImageComp = () => {
     return (
         <>
             {/* Edit About Modal********************************************************************************************* */}
-            <button type="button" className="btn btn-primary d-none launchdemomodal" data-bs-toggle="modal" data-bs-target="#editabout" ref={clickEditHeroModelOpenBtn}>
+            <button type="button" className="btn btn-primary d-none launchdemomodal" data-bs-toggle="modal" data-bs-target="#edithero" ref={clickEditHeroModelOpenBtn}>
                 Launch demo modal
             </button>
 
-            <div className="modal fade" id="editabout" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="edithero" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" style={{ maxWidth: 'none' }}>
                     <div className="modal-content">
                         <div className="modal-header">
