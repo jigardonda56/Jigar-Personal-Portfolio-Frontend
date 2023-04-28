@@ -14,7 +14,7 @@ const VolunteerComp = () => {
     const [visibleClass, setvisibleClass] = useState("");
     let breakCondition = false;
     window.addEventListener('scroll', function () {
-        var element = document.querySelector('.volunteering-text-div');
+        var element = document.querySelector('.volunteer-img');
         var position = element.getBoundingClientRect();
         // checking for partial visibility
         if (position.top >= 0 && position.bottom <= window.innerHeight && !breakCondition) {
@@ -35,7 +35,7 @@ const VolunteerComp = () => {
                         return <div key={index} className={"card mb-3 volunteering-div " + visibleClass} >
                             <div className="row g-0">
                                 <div className="volunteering-image-div">
-                                    <img src={data.image || blank_profile_pic} className="img-fluid rounded-start" alt="..." />
+                                    <img src={data.image || blank_profile_pic} className="img-fluid rounded-start volunteer-img" alt="..." />
                                 </div>
                                 <div className="volunteering-text-div">
                                     <h5 className="card-title">{data.title}</h5>
