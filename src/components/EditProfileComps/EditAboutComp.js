@@ -25,6 +25,7 @@ const EditAboutComp = () => {
     const SaveAboutBtnClick = (e) => {
         e.preventDefault();
         editAbout(editabout.id, editabout.editdescription);
+        setEditAbout({  editdescription: "" })
         clickEditAboutModelCloseBtn.current.click();
     }
 
