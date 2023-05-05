@@ -66,7 +66,7 @@ input[type="file"] {
   opacity: 0.8;
 }
 
-.card-text{
+.card-text, pre{
   font-family: inherit;
 }
 @media (max-width: 768px) {
