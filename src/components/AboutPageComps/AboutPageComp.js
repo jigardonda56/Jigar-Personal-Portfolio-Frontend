@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import myContext from '../../context/notes/myContext'
 import '../../css/AboutPage.css'
 import aboutheroimage from '../../images/jigar-profile-pic-1.png'

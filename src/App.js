@@ -5,13 +5,13 @@ import {
   Route
 } from "react-router-dom";
 
-import About from './components/GeneralComps/About';
+// import About from './components/GeneralComps/About';
 import Navbar from './components/GeneralComps/Navbar';
 import Profile from './components/GeneralComps/Profile';
 import Context from './context/notes/myContextState';
 import EditProfileComp from './components/EditProfileComps/EditProfileComp';
 import Login from './components/GeneralComps/Login';
-import AboutComp from './components/DisplayProfileComps/AboutComp';
+// import AboutComp from './components/DisplayProfileComps/AboutComp';
 
 function App() {
   return (
